@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo Collection</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <h1>Моя коллекция фотографий</h1>
+      <div class="top">
+        <ul class="tags">
+          <li class="tags__list active" data-filter='all'>Все</li>
+          <li class="tags__list" data-filter='sea'>Море</li>
+          <li class="tags__list" data-filter='mountains' >Горы</li>
+          <li class="tags__list" data-filter='pattern'>Архитектура</li>
+          <li class="tags__list" data-filter='citys'>Города</li>
+        </ul>
+        <div class="search">
+          <input
+            onchange="searchPhotos(event)"
+            type="text"
+            class="search__input"
+            placeholder="Поиск по названию"
+          />
+        </div>
+      </div>
+      <div class="content">
+       
+        
+      </div>
+      <div class="pagination">
+        <ul class="pagination__ul">
+            <li class="pagination__li active">1</li>
+            <li class="pagination__li" >2</li>  
+            <li class="pagination__li" >3</li>
+            <li class="pagination__li" >4</li>
+            <li class="pagination__li" >5</li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+   
+  </body>
+</html>
